@@ -8,7 +8,7 @@ Dưới đây là hình ảnh thực tế nhóm đã thu thập:
 
 | Painted_Nail | Long_Nail | Short_Nail |
 | :---: | :---: | :---: |
-| ![Painted](painted_nail.jpg) | ![Long](long_nail.PNG) | ![Short](short_nail.JPG) |
+| <img src="painted_nail.jpg" width="250"> | <img src="long_nail.PNG" width="250"> | <img src="short_nail.JPG" width="250"> |
 
 ### 2. Thống kê
 - **Tổng số ảnh:** 248 ảnh.
