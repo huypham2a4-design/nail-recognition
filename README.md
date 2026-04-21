@@ -35,9 +35,28 @@ Nhóm đã hoàn thành giai đoạn tối ưu hóa mô hình với các kết q
   - Accuracy tập Validation đạt **~56.5%**.
   - `Val_Loss` giảm từ 1.23 xuống **1.03**, cải thiện đáng kể hiện tượng Overfitting.
 - **Thực tế:** Mô hình dự đoán chính xác ảnh chụp môi trường ngoài với độ tin cậy **55.14%** cho lớp `Short_Nail`.
+
+### Mô hình CNN tự build
+### 1. Mục tiêu
+- Xây dựng mô hình CNN để phân loại ảnh móng tay thành 3 lớp: Long_Nail, Painted_Nail, Short_Nail;
+- triển khai pipeline từ tiền xử lý dữ liệu → huấn luyện → đánh giá → suy luận
+### 2. Công việc đã hoàn thành
+- Tổ chức dataset theo cấu trúc Train/Val
+- Viết hàm đọc ảnh bằng OpenCV, resize về (150,150)
+- Vẽ phân phối lớp (bar/pie), hiển thị mẫu ảnh
+- CNN tự xây dựng gồm 3 block Conv2D + MaxPooling, Fully Connected + Dropout
+- Áp dụng Data Augmentation
+- Vẽ biểu đồ đánh giá
+- Tính Confusion Matrix và Classification Report
+- Dự đoán 1 ảnh và batch ảnh
+### 3. Kết quả
+- huấn luyện và đánh giá chạy thành công
+- có khả năng dự đoán nhưng độ chính xác chưa ổn định
+- Xuất hiện hiện tượng: Dự đoán lệch về một lớp (Short_Nail), Confidence thấp (<50%)
 ## 📂 Sản phẩm bàn giao
-- File mô hình: `nail_model_finetuned.h5`
-- Notebook huấn luyện: `HUIT_NailRecognition_V2_FineTuning.ipynb`
+- File mô hình: `nail_model_finetuned.h5`, `nail_cnn_model.keras`
+- Notebook huấn luyện: `HUIT_NailRecognition_V2_FineTuning.ipynb`, `Tuan3_HuanLuyenMoHinhCNN.ipynb`
 
 ## 👥 Thành viên thực hiện
 - Phạm Thanh Huy(HUIT)
+- Lê Huỳnh Bảo Long
